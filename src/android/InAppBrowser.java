@@ -843,6 +843,8 @@ public class InAppBrowser extends CordovaPlugin {
         public InAppBrowserClient(CordovaWebView webView, EditText mEditText) {
             this.webView = webView;
             this.edittext = mEditText;
+			this.webView.setBackgroundColor(Color.TRANSPARENT);
+			this.webView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
 
         /**
